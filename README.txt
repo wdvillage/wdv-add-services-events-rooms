@@ -23,24 +23,27 @@ The plugin "WDV - Add Services, Events, Rooms" added custom post types "Services
 
 == Frequently Asked Questions ==
 
+How to add post format services?
+<a href="http://doc.wdvillage.com/docs/aniro-hotel/29-custom-post-format-services/" rel="nofollow">How to add post format services?</a>
+
+How to add post format events?
+<a href="http://doc.wdvillage.com/docs/aniro-hotel/30-custom-post-format-events/" rel="nofollow">How to add post format events?</a>
+
 == Screenshots ==
 
-1. Add new "WDV About Me Widget" widget using "Widgets > Add a Widget".
-2. You can add an image and choose its size and border radius.
-3. You can add text (name, firm name, description) and choose text align.
-4. You can add link and you can add contact information.
-5. You can choose font size for social icons, border radius, colors.
-6. You can add social links.
-7. Example 1 of using "WDV About Me Widget".
-8. Example 2 of using "WDV About Me Widget".
-9. Example 3 of using "WDV About Me Widget".
-10. Example 4 of using "WDV About Me Widget".
-11. Example 5 of using "WDV About Me Widget".
-12. Example 6 of using "WDV About Me Widget".
+1. Add new Room using "Rooms > New Room".
+2. You can add room's photos, description and more.
+3. Rooms on front page.
+4. Add new Event using "Events > New Event".
+5. You can add event date, time and more.
+6. Post type Event.
+7. Add new Service using "Services > New Service".
+8. You can add icon and description.
+9. Services on front page.
 
 == Changelog ==
-= 1.0 =
+= 1.0.0 =
 
 == Upgrade Notice ==
-= 1.0 =
+= 1.0.0 =
 
