@@ -215,5 +215,79 @@ class Wdv_Add_Services_Events_Rooms_Admin {
 	);
 
 	register_post_type( "rooms", $args );            
-        }       
+        }    
+        
+        /**
+	 * Post Type: Testimonials.
+	 */
+        public static function wdv_post_type_testimonials() {
+	$labels = array(
+		"name" => __( "Testimonials", "aniro-hotel-light" ),
+		"singular_name" => __( "Testimonial", "aniro-hotel-light" ),
+		"use_featured_image" => __( "Use as featured image", "aniro-hotel-light" ),
+		"archives" => __( "Testimonials archives", "aniro-hotel-light" ),
+		"items_list_navigation" => __( "Testimonials list navigation", "aniro-hotel-light" ),
+		"items_list" => __( "Testimonials list", "aniro-hotel-light" ),
+		"name_admin_bar" => __( "Testimonial", "aniro-hotel-light" ),
+	);
+
+	$args = array(
+		"label" => __( "Testimonials", "aniro-hotel-light" ),
+		"labels" => $labels,
+		"description" => "Add testimonials",
+		"public" => true,
+		"publicly_queryable" => true,
+		"show_ui" => true,
+		"delete_with_user" => false,
+		"show_in_rest" => true,
+		"rest_base" => "",
+		"rest_controller_class" => "WP_REST_Posts_Controller",
+		"has_archive" => true,
+		"show_in_menu" => true,
+		"show_in_nav_menus" => false,
+		"exclude_from_search" => false,
+		"capability_type" => "post",
+		"map_meta_cap" => true,
+		"hierarchical" => false,
+		"rewrite" => array( "slug" => "testimonial", "with_front" => true ),
+		"query_var" => true,
+		"supports" => array( "title", "editor" ),
+	);
+
+	register_post_type( "testimonial", $args );
+        }
+	/**
+	 * Post Type: Adverticements.
+	 */
+        public static function wdv_post_type_adverticements() {
+	$labels = array(
+		"name" => __( "Adverticements", "aniro-hotel-light" ),
+		"singular_name" => __( "Adverticement", "aniro-hotel-light" ),
+	);
+
+	$args = array(
+		"label" => __( "Adverticements", "aniro-hotel-light" ),
+		"labels" => $labels,
+		"description" => "",
+		"public" => true,
+		"publicly_queryable" => true,
+		"show_ui" => true,
+		"delete_with_user" => false,
+		"show_in_rest" => false,
+		"rest_base" => "",
+		"rest_controller_class" => "WP_REST_Posts_Controller",
+		"has_archive" => false,
+		"show_in_menu" => true,
+		"show_in_nav_menus" => false,
+		"exclude_from_search" => false,
+		"capability_type" => "post",
+		"map_meta_cap" => true,
+		"hierarchical" => false,
+		"rewrite" => array( "slug" => "adverticement", "with_front" => true ),
+		"query_var" => true,
+		"supports" => array( "title", "editor", "thumbnail" ),
+	);
+
+	register_post_type( "adverticement", $args );
+        }
 }
