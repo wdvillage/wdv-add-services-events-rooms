@@ -107,6 +107,10 @@ class Wdv_Add_Services_Events_Rooms_Admin {
 	 * @access 	public
 	 * @uses 	register_post_type()
 	 */
+        
+        /**
+	 * Post Type: Services.
+	 */
         public static function wdv_post_type_services() {
 	$labels = array(
 		"name" => __( "Services", "aniro-hotel-light" ),
@@ -147,43 +151,10 @@ class Wdv_Add_Services_Events_Rooms_Admin {
 
 	register_post_type( "services", $args );
             
-        }
-        public static function wdv_post_type_events() {
-	$labels = array(
-		"name" => __( "Events", "aniro-hotel-light" ),
-		"singular_name" => __( "Event", "aniro-hotel-light" ),
-		"menu_name" => __( "Events", "aniro-hotel-light" ),
-		"all_items" => __( "All Events", "aniro-hotel-light" ),
-		"add_new" => __( "Add Event", "aniro-hotel-light" ),
-		"archives" => __( "events", "aniro-hotel-light" ),
-	);
-
-	$args = array(
-		"label" => __( "Events", "aniro-hotel-light" ),
-		"labels" => $labels,
-		"description" => "",
-		"public" => true,
-		"publicly_queryable" => true,
-		"show_ui" => true,
-		"delete_with_user" => false,
-		"show_in_rest" => false,
-		"rest_base" => "",
-		"rest_controller_class" => "WP_REST_Posts_Controller",
-		"has_archive" => true,
-		"show_in_menu" => true,
-		"show_in_nav_menus" => true,
-		"exclude_from_search" => false,
-		"capability_type" => "post",
-		"map_meta_cap" => true,
-		"hierarchical" => false,
-		"rewrite" => array( "slug" => "events", "with_front" => true ),
-		"query_var" => true,
-		"supports" => array( "title", "editor", "thumbnail", "excerpt", "custom-fields", "comments", "post-formats" ),
-	);
-
-	register_post_type( "events", $args );            
-        }  
-        
+        } 
+	/**
+	 * Post Type: Rooms.
+	 */        
         public static function wdv_post_type_rooms() {
 	$labels = array(
 		"name" => __( "Rooms", "aniro-hotel-light" ),
@@ -290,4 +261,42 @@ class Wdv_Add_Services_Events_Rooms_Admin {
 
 	register_post_type( "adverticement", $args );
         }
+
+	/**
+	 * Post Type: Abouts.
+	 */
+        public static function wdv_post_type_abouts() {
+	$labels = array(
+		"name" => __( "Abouts", "aniro-hotel-light" ),
+		"singular_name" => __( "About", "aniro-hotel-light" ),
+		"archives" => __( "abouts", "aniro-hotel-light" ),
+	);
+
+	$args = array(
+		"label" => __( "Abouts", "aniro-hotel-light" ),
+		"labels" => $labels,
+		"description" => "",
+		"public" => true,
+		"publicly_queryable" => true,
+		"show_ui" => true,
+		"delete_with_user" => false,
+		"show_in_rest" => true,
+		"rest_base" => "",
+		"rest_controller_class" => "WP_REST_Posts_Controller",
+		"has_archive" => true,
+		"show_in_menu" => true,
+		"show_in_nav_menus" => true,
+		"exclude_from_search" => false,
+		"capability_type" => "post",
+		"map_meta_cap" => true,
+		"hierarchical" => false,
+		"rewrite" => array( "slug" => "about", "with_front" => true ),
+		"query_var" => true,
+		"supports" => array( "title", "editor", "thumbnail" ),
+	);
+
+	register_post_type( "about", $args );
+        }
+
+        
 }

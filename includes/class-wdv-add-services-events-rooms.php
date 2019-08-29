@@ -157,10 +157,10 @@ class Wdv_Add_Services_Events_Rooms {
 		$this->loader->add_action( 'admin_enqueue_scripts', $plugin_admin, 'enqueue_styles' );
 		$this->loader->add_action( 'admin_enqueue_scripts', $plugin_admin, 'enqueue_scripts' );
                 $this->loader->add_action( 'init', $plugin_admin, 'wdv_post_type_services' );
-                $this->loader->add_action( 'init', $plugin_admin, 'wdv_post_type_events' );
                 $this->loader->add_action( 'init', $plugin_admin, 'wdv_post_type_rooms' );
                 $this->loader->add_action( 'init', $plugin_admin, 'wdv_post_type_testimonials' );
                 $this->loader->add_action( 'init', $plugin_admin, 'wdv_post_type_adverticements' );
+                $this->loader->add_action( 'init', $plugin_admin, 'wdv_post_type_abouts' );
 	}
 
 	/**
