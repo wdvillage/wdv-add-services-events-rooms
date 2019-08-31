@@ -159,7 +159,7 @@ class Wdv_Add_Services_Events_Rooms {
                 $this->loader->add_action( 'init', $plugin_admin, 'wdv_post_type_services' );
                 $this->loader->add_action( 'init', $plugin_admin, 'wdv_post_type_rooms' );
                 $this->loader->add_action( 'init', $plugin_admin, 'wdv_post_type_testimonials' );
-                $this->loader->add_action( 'init', $plugin_admin, 'wdv_post_type_adverticements' );
+                $this->loader->add_action( 'init', $plugin_admin, 'wdv_post_type_advertisements' );
                 $this->loader->add_action( 'init', $plugin_admin, 'wdv_post_type_abouts' );
 	}
 

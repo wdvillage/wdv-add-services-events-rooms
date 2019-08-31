@@ -115,26 +115,18 @@ class Wdv_Add_Services_Events_Rooms_Admin {
 	$labels = array(
 		"name" => __( "Services", "aniro-hotel-light" ),
 		"singular_name" => __( "Service", "aniro-hotel-light" ),
-		"menu_name" => __( "Services", "aniro-hotel-light" ),
-		"all_items" => __( "All Services", "aniro-hotel-light" ),
-		"add_new" => __( "Add New", "aniro-hotel-light" ),
-		"add_new_item" => __( "Add New Service", "aniro-hotel-light" ),
-		"edit_item" => __( "Edit Service", "aniro-hotel-light" ),
-		"new_item" => __( "New Service", "aniro-hotel-light" ),
-		"view_item" => __( "View Service", "aniro-hotel-light" ),
-		"view_items" => __( "View Services", "aniro-hotel-light" ),
 		"archives" => __( "services", "aniro-hotel-light" ),
 	);
 
 	$args = array(
 		"label" => __( "Services", "aniro-hotel-light" ),
 		"labels" => $labels,
-		"description" => "",
+		"description" => "Add post type \"Services\"",
 		"public" => true,
 		"publicly_queryable" => true,
 		"show_ui" => true,
 		"delete_with_user" => false,
-		"show_in_rest" => false,
+		"show_in_rest" => true,
 		"rest_base" => "",
 		"rest_controller_class" => "WP_REST_Posts_Controller",
 		"has_archive" => true,
@@ -146,7 +138,7 @@ class Wdv_Add_Services_Events_Rooms_Admin {
 		"hierarchical" => false,
 		"rewrite" => array( "slug" => "services", "with_front" => true ),
 		"query_var" => true,
-		"supports" => array( "title", "editor", "thumbnail", "excerpt", "trackbacks", "custom-fields", "comments", "revisions", "author", "page-attributes", "post-formats" ),
+		"supports" => array( "title", "editor" ),
 	);
 
 	register_post_type( "services", $args );
@@ -165,12 +157,12 @@ class Wdv_Add_Services_Events_Rooms_Admin {
 	$args = array(
 		"label" => __( "Rooms", "aniro-hotel-light" ),
 		"labels" => $labels,
-		"description" => "",
+		"description" => "Add post type \"Rooms\"",
 		"public" => true,
 		"publicly_queryable" => true,
 		"show_ui" => true,
 		"delete_with_user" => false,
-		"show_in_rest" => false,
+		"show_in_rest" => true,
 		"rest_base" => "",
 		"rest_controller_class" => "WP_REST_Posts_Controller",
 		"has_archive" => true,
@@ -182,7 +174,7 @@ class Wdv_Add_Services_Events_Rooms_Admin {
 		"hierarchical" => false,
 		"rewrite" => array( "slug" => "rooms", "with_front" => true ),
 		"query_var" => true,
-		"supports" => array( "title", "editor", "thumbnail", "custom-fields" ),
+		"supports" => array( "title", "editor", "thumbnail" ),
 	);
 
 	register_post_type( "rooms", $args );            
@@ -195,17 +187,13 @@ class Wdv_Add_Services_Events_Rooms_Admin {
 	$labels = array(
 		"name" => __( "Testimonials", "aniro-hotel-light" ),
 		"singular_name" => __( "Testimonial", "aniro-hotel-light" ),
-		"use_featured_image" => __( "Use as featured image", "aniro-hotel-light" ),
-		"archives" => __( "Testimonials archives", "aniro-hotel-light" ),
-		"items_list_navigation" => __( "Testimonials list navigation", "aniro-hotel-light" ),
-		"items_list" => __( "Testimonials list", "aniro-hotel-light" ),
-		"name_admin_bar" => __( "Testimonial", "aniro-hotel-light" ),
+		"archives" => __( "testimonials", "aniro-hotel-light" ),
 	);
 
 	$args = array(
 		"label" => __( "Testimonials", "aniro-hotel-light" ),
 		"labels" => $labels,
-		"description" => "Add testimonials",
+		"description" => "Add post type \"Testimonials\"",
 		"public" => true,
 		"publicly_queryable" => true,
 		"show_ui" => true,
@@ -215,14 +203,14 @@ class Wdv_Add_Services_Events_Rooms_Admin {
 		"rest_controller_class" => "WP_REST_Posts_Controller",
 		"has_archive" => true,
 		"show_in_menu" => true,
-		"show_in_nav_menus" => false,
+		"show_in_nav_menus" => true,
 		"exclude_from_search" => false,
 		"capability_type" => "post",
 		"map_meta_cap" => true,
 		"hierarchical" => false,
-		"rewrite" => array( "slug" => "testimonial", "with_front" => true ),
+		"rewrite" => array( "slug" => "testimonials", "with_front" => true ),
 		"query_var" => true,
-		"supports" => array( "title", "editor" ),
+		"supports" => array( "title", "editor", "thumbnail" ),
 	);
 
 	register_post_type( "testimonial", $args );
@@ -230,36 +218,37 @@ class Wdv_Add_Services_Events_Rooms_Admin {
 	/**
 	 * Post Type: Adverticements.
 	 */
-        public static function wdv_post_type_adverticements() {
+        public static function wdv_post_type_advertisements() {
 	$labels = array(
-		"name" => __( "Adverticements", "aniro-hotel-light" ),
-		"singular_name" => __( "Adverticement", "aniro-hotel-light" ),
+		"name" => __( "Advertisements", "aniro-hotel-light" ),
+		"singular_name" => __( "Advertisement", "aniro-hotel-light" ),
+		"archives" => __( "advertisements", "aniro-hotel-light" ),
 	);
 
 	$args = array(
-		"label" => __( "Adverticements", "aniro-hotel-light" ),
+		"label" => __( "Advertisements", "aniro-hotel-light" ),
 		"labels" => $labels,
-		"description" => "",
+		"description" => "Add post type \"Advertisements\"",
 		"public" => true,
 		"publicly_queryable" => true,
 		"show_ui" => true,
 		"delete_with_user" => false,
-		"show_in_rest" => false,
+		"show_in_rest" => true,
 		"rest_base" => "",
 		"rest_controller_class" => "WP_REST_Posts_Controller",
-		"has_archive" => false,
+		"has_archive" => true,
 		"show_in_menu" => true,
-		"show_in_nav_menus" => false,
+		"show_in_nav_menus" => true,
 		"exclude_from_search" => false,
 		"capability_type" => "post",
 		"map_meta_cap" => true,
 		"hierarchical" => false,
-		"rewrite" => array( "slug" => "adverticement", "with_front" => true ),
+		"rewrite" => array( "slug" => "advertisements", "with_front" => true ),
 		"query_var" => true,
 		"supports" => array( "title", "editor", "thumbnail" ),
 	);
 
-	register_post_type( "adverticement", $args );
+	register_post_type( "advertisement", $args );
         }
 
 	/**
@@ -290,7 +279,7 @@ class Wdv_Add_Services_Events_Rooms_Admin {
 		"capability_type" => "post",
 		"map_meta_cap" => true,
 		"hierarchical" => false,
-		"rewrite" => array( "slug" => "about", "with_front" => true ),
+		"rewrite" => array( "slug" => "abouts", "with_front" => true ),
 		"query_var" => true,
 		"supports" => array( "title", "editor", "thumbnail" ),
 	);
