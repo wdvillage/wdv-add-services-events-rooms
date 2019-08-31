@@ -121,7 +121,7 @@ class Wdv_Add_Services_Events_Rooms_Admin {
 	$args = array(
 		"label" => __( "Services", "aniro-hotel-light" ),
 		"labels" => $labels,
-		"description" => "Add post type \"Services\"",
+		"description" => "",
 		"public" => true,
 		"publicly_queryable" => true,
 		"show_ui" => true,
@@ -157,7 +157,7 @@ class Wdv_Add_Services_Events_Rooms_Admin {
 	$args = array(
 		"label" => __( "Rooms", "aniro-hotel-light" ),
 		"labels" => $labels,
-		"description" => "Add post type \"Rooms\"",
+		"description" => "",
 		"public" => true,
 		"publicly_queryable" => true,
 		"show_ui" => true,
@@ -193,7 +193,7 @@ class Wdv_Add_Services_Events_Rooms_Admin {
 	$args = array(
 		"label" => __( "Testimonials", "aniro-hotel-light" ),
 		"labels" => $labels,
-		"description" => "Add post type \"Testimonials\"",
+		"description" => "",
 		"public" => true,
 		"publicly_queryable" => true,
 		"show_ui" => true,
@@ -228,7 +228,7 @@ class Wdv_Add_Services_Events_Rooms_Admin {
 	$args = array(
 		"label" => __( "Advertisements", "aniro-hotel-light" ),
 		"labels" => $labels,
-		"description" => "Add post type \"Advertisements\"",
+		"description" => "",
 		"public" => true,
 		"publicly_queryable" => true,
 		"show_ui" => true,
