@@ -72,7 +72,7 @@ class Wdv_Add_Services_Events_Rooms_Admin {
 		 * between the defined hooks and the functions defined in this
 		 * class.
 		 */
-
+        wp_enqueue_style( 'fontawesomeadmin', plugin_dir_url( __FILE__ ) . '../includes/fonts/css/all.min.css', array(), '5.9.0', 'all' );              
 		wp_enqueue_style( $this->plugin_name, plugin_dir_url( __FILE__ ) . 'css/wdv-add-services-events-rooms-admin.css', array(), $this->version, 'all' );
 
 	}

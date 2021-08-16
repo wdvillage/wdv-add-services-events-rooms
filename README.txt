@@ -2,7 +2,7 @@
 Contributors: vrpr
 Tags: custom post types, post types
 Requires at least: 5.0.0
-Tested up to: 5.2.2
+Tested up to: 5.8
 Stable tag: trunk
 Requires PHP: 5.6
 License: GPLv2 or later
@@ -40,7 +40,9 @@ How to add post format events?
 
 == Changelog ==
 = 1.0.0 =
+= 1.0.1 =
 
 == Upgrade Notice ==
 = 1.0.0 =
+= 1.0.1 = changes in admin
 

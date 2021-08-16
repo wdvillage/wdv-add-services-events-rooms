@@ -2,3 +2,9 @@
  * All of the CSS for your admin-specific functionality should be
  * included in this file.
  */
+ 
+ .acf-field select,
+.acf-field option {
+    font-family: 'Font Awesome 5 Free' !important;
+    font-weight: 900;
+  }

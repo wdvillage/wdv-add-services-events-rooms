@@ -10,7 +10,7 @@
  * Plugin Name:       WDV - Add Services, Events, Rooms
  * Plugin URI:        http://wdvillage.com/product/wdv-add-services-events-rooms-plugin/
  * Description:       The plugin "WDV - Add Services, Events, Rooms" added custom post types "Services", "Abouts", "Rooms", "Testimonials", "Advertisements" to WP theme "Aniro Hotel Light".
- * Version:           1.1.0
+ * Version:           1.1.2
  * Author:            wdvillage
  * Author URI:        http://wdvillage.com
  * License:           GPL-2.0+
@@ -29,7 +29,7 @@ if ( ! defined( 'WPINC' ) ) {
  * Start at version 1.0.0 and use SemVer - https://semver.org
  * Rename this for your plugin and update it as you release new versions.
  */
-define( 'WDV_ADD_SERVICES_EVENTS_ROOMS_VERSION', '1.0.0' );
+define( 'WDV_ADD_SERVICES_EVENTS_ROOMS_VERSION', '1.1.2' );
 
 /**
  * The code that runs during plugin activation.
